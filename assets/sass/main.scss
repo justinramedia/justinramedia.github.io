@@ -1318,8 +1318,8 @@
 /* CTA */
 
 	#cta {
-		background: _palette(accent2, bg);
-		color: _palette(accent2, fg);
+		background: _palette(accent4, bg);
+		color: _palette(accent4, fg);
 		padding: 3.5em 0 4em 0;
 		text-align: center;
 
@@ -1339,7 +1339,7 @@
 		.button {
 			box-shadow: none;
 			background: #fff;
-			color: _palette(accent2, bg);
+			color: _palette(accent4, bg);
 		}
 
 		input[type="text"],
@@ -1347,7 +1347,7 @@
 		input[type="email"],
 		select,
 		textarea {
-			color: _palette(accent2, fg-bold);
+			color: _palette(accent4, fg-bold);
 			background: rgba(255,255,255,0.15);
 			border: 0;
 
@@ -1384,7 +1384,7 @@
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 14pt;
 			}
 
 		/* Banner */
