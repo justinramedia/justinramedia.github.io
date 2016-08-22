@@ -2517,6 +2517,7 @@ body.landing #main {
         font-weight: normal;
         text-transform: none !important; }
       #navButton .toggle:before {
+        background: #90b0ba;
         border-radius: 6px;
         color: #fff;
         content: '\f0c9';
