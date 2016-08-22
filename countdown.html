@@ -26,8 +26,6 @@
 	</div>
 
 	<script>
-		var deadline = 'December 12 2015 15:30:00 GMT-0400';
-
 		function getTimeRemaining(endtime){
 		  var t = Date.parse(endtime) - Date.parse(new Date());
 		  var seconds = Math.floor( (t/1000) % 60 );
@@ -67,6 +65,7 @@
 		  var timeinterval = setInterval(updateClock, 1000);
 		}
 
+		var deadline = 'December 12 2015 15:30:00 GMT-0400';
 		initializeClock('clockdiv', deadline);
 	</script>
 </body>
