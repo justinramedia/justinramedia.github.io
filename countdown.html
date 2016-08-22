@@ -24,14 +24,16 @@
 	    <div class="smalltext">Seconds</div>
 	  </div>
 	</div>
-	
+
 	<script>
-		function getTimeRemaining(endtime) {
+		var deadline = 'December 12 2015 15:30:00 GMT-0400';
+
+		function getTimeRemaining(endtime){
 		  var t = Date.parse(endtime) - Date.parse(new Date());
-		  var seconds = Math.floor((t / 1000) % 60);
-		  var minutes = Math.floor((t / 1000 / 60) % 60);
-		  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-		  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+		  var seconds = Math.floor( (t/1000) % 60 );
+		  var minutes = Math.floor( (t/1000/60) % 60 );
+		  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+		  var days = Math.floor( t/(1000*60*60*24) );
 		  return {
 		    'total': t,
 		    'days': days,
@@ -65,7 +67,6 @@
 		  var timeinterval = setInterval(updateClock, 1000);
 		}
 
-		var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
 		initializeClock('clockdiv', deadline);
 	</script>
 </body>
