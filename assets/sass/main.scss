@@ -1546,9 +1546,8 @@
 					outline: 0;
 
 					&:before {
-						background: _palette(accent4, bg);
 						border-radius: _size(border-radius);
-						color: #fff;
+						color: _palette(accent4, bg);
 						content: '\f0c9';
 						display: block;
 						font-size: 16px;
