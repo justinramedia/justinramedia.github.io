@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="listApp">
+	<head>
+		<title>List App</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="app.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+    <body ng-controller="ListController as listCtrl">
+    	<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+			    	</button>
+			    	<a class="navbar-brand" href="#"><img src="images/checklist_logo.png" alt="Checklist" class="img-responsive"></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Home <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">Add a list</a></li>
+						<li><a href="#">Settings</a></li>
+					</ul>
+			    </div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+		<div ng-repeat="product in listCtrl.products">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-3 sidebar">
+						<h3>My Lists</h3>
+						<ul>
+							<li>
+								<a href="#">Special List</a>
+							</li>
+							<li>
+								<a href="#">Groceries</a>
+							</li>
+							<li>
+								<a href="#">To-Dos</a>
+							</li>
+							<li>
+								<a href="#">Misc. </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-9 lists">
+						<div class="row">
+							<div class="col-sm-8">
+								<h1><!--{{listname}}-->{{product.name}}</h1>
+								<!--  Add item Form -->
+								<form name="reviewForm" ng-controller="ReviewController as reviewCtrl" ng-submit="reviewCtrl.addReview(product)">
+
+									<!--  Review Form -->
+									<fieldset class="form-group">
+										<input ng-model="reviewCtrl.review.body" class="form-control enter" placeholder="Add anything" title="Review"></input>
+										<input type="submit" class="btn btn-primary pull-right" value="Add Item" />
+									</fieldset>
+
+									<fieldset class="form-group">
+										
+									</fieldset>
+								</form>
+
+								<!--  Items List -->
+								<div class="list_wrapper">
+									<div ng-repeat="review in product.reviews" class="checkbox">
+										<label>
+											<input type="checkbox" class="item"> {{review.body}}
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).on('change', 'div.checkbox', function() {
+		  $(".list_wrapper").append(this);
+		  $(this).css({
+		  	"opacity" : ".7"
+		  });
+		});
+
+	</script>
+</html>
