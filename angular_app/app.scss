@@ -52,6 +52,32 @@ body {
 	}
 }
 
+.sidebar {
+	background-color: $blue;
+	color: $white;
+	padding: 6rem 3rem 0;
+	display: none;
+	@media (min-width: 768px){
+		position: fixed;
+		height: 100%;
+		display: block;
+	}
+	ul {
+		list-style: none;
+	    padding-left: 0;
+		li {
+			a {
+				text-decoration: none;
+				color: $white;
+			}
+		}
+	}
+	.logo {
+		margin-bottom: 3rem;
+	    max-width: 30px;
+	}
+}
+
 .form-control {
 	padding: 6px 0;
 }
@@ -140,24 +166,3 @@ button {
 	}
 }
 
-.sidebar {
-	background-color: $blue;
-	color: $white;
-	padding: 9rem 3rem 0;
-	display: none;
-	@media (min-width: 768px){
-		position: fixed;
-		height: 100%;
-		display: block;
-	}
-	ul {
-		list-style: none;
-	    padding-left: 0;
-		li {
-			a {
-				text-decoration: none;
-				color: $white;
-			}
-		}
-	}
-}

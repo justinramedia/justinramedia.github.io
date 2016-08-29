@@ -39,6 +39,26 @@ body {
       width: 10%;
       float: right; }
 
+.sidebar {
+  background-color: #5FAFFF;
+  color: #fff;
+  padding: 6rem 3rem 0;
+  display: none; }
+  @media (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      height: 100%;
+      display: block; } }
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0; }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #fff; }
+  .sidebar .logo {
+    margin-bottom: 3rem;
+    max-width: 30px; }
+
 .form-control {
   padding: 6px 0; }
 
@@ -117,22 +137,5 @@ button {
   .lists :-moz-placeholder {
     /* Firefox 18- */
     color: #acd5ff; }
-
-.sidebar {
-  background-color: #5FAFFF;
-  color: #fff;
-  padding: 9rem 3rem 0;
-  display: none; }
-  @media (min-width: 768px) {
-    .sidebar {
-      position: fixed;
-      height: 100%;
-      display: block; } }
-  .sidebar ul {
-    list-style: none;
-    padding-left: 0; }
-    .sidebar ul li a {
-      text-decoration: none;
-      color: #fff; }
 
 /*# sourceMappingURL=app.css.map */
