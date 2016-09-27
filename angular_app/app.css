@@ -18,30 +18,41 @@ body {
 .navbar-collapse {
   border: none; }
 
-.navbar {
+.navbar, .navbar-default {
   margin-bottom: 0;
   border-radius: 0; }
   @media (min-width: 768px) {
-    .navbar {
+    .navbar, .navbar-default {
       display: none; } }
-  .navbar .navbar-toggle {
+  .navbar .navbar-toggle, .navbar-default .navbar-toggle {
     border: none;
     float: left;
     margin-left: 15px;
     margin-right: 0; }
-    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
       background-color: transparent; }
-    .navbar .navbar-toggle .icon-bar {
-      background-color: #fff; }
-  .navbar .navbar-brand {
-    float: right; }
-    .navbar .navbar-brand img {
+    .navbar .navbar-toggle .icon-bar, .navbar-default .navbar-toggle .icon-bar {
+      background-color: #ffffff; }
+    .navbar .navbar-toggle img, .navbar-default .navbar-toggle img {
+      width: 20px;
+      border-radius: 50%;
+      border: solid 3px #5FAFFF;
+      position: absolute;
+      top: 6px;
+      left: 22px; }
+  .navbar .navbar-brand, .navbar-default .navbar-brand {
+    float: right;
+    font-size: 14px;
+    color: #ffffff; }
+    .navbar .navbar-brand:hover, .navbar-default .navbar-brand:hover {
+      color: #ffffff; }
+    .navbar .navbar-brand img, .navbar-default .navbar-brand img {
       width: 10%;
       float: right; }
 
 .sidebar {
   background-color: #5FAFFF;
-  color: #fff;
+  color: #ffffff;
   padding: 6rem 3rem 0;
   display: none; }
   @media (min-width: 768px) {
@@ -54,7 +65,7 @@ body {
     padding-left: 0; }
     .sidebar ul li a {
       text-decoration: none;
-      color: #fff; }
+      color: #ffffff; }
   .sidebar .logo {
     margin-bottom: 3rem;
     max-width: 30px; }
@@ -121,10 +132,11 @@ button {
   margin-top: -35px; }
 
 .lists {
-  padding: 3rem 3rem 0; }
+  padding: 5rem 3rem 0; }
   @media (min-width: 768px) {
     .lists {
-      margin-left: 25%; } }
+      margin-left: 25%;
+      padding: 3rem 3rem 0; } }
   .lists ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #acd5ff; }

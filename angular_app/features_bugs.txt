@@ -1,0 +1,12 @@
+Features
+
+- Ability to sort all lists in alpha
+- Favorites list (things that you use on a regs basis)
+- Ability to check all or uncheck all (at once)
+- 
+
+
+Bugs
+- New items should be added to top
+- when UNchecked, items should be moved to top and darker
+- take away ability to add _blank item

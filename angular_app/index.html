@@ -19,14 +19,15 @@
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
 				        <span class="icon-bar"></span>
+				        <img src="images/checklist_logo.png" alt="Checklist" class="img-responsive">
 			    	</button>
-			    	<a class="navbar-brand" href="#"><img src="images/checklist_logo.png" alt="Checklist" class="img-responsive"></a>
+			    	<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add a list</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="#">Home <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">Add a list</a></li>
+						<li><a href="#">My lists</a></li>
 						<li><a href="#">Settings</a></li>
 					</ul>
 			    </div><!-- /.navbar-collapse -->
@@ -39,7 +40,7 @@
 						<img src="images/checklist_logo.png" alt="Checklist" class="logo">
 						<h3>My Lists</h3>
 						<ul>
-							<li>
+							<li ng-repeat="list in product.lists">
 								<a href="#">Special List</a>
 							</li>
 							<li>
@@ -87,12 +88,25 @@
 		</div>
 	</body>
 	<script>
-		$(document).on('change', 'div.checkbox', function() {
+		/*$(document).on('change', 'div.checkbox', function() {
 		  $(".list_wrapper").append(this);
 		  $(this).css({
 		  	"opacity" : ".7"
 		  });
+		});*/
+
+		/*$( "div.checkbox" ).prop( "checked", function() {
+			$(".list_wrapper").append(this);
+			$(this).css({
+				"opacity" : ".7"
+			});
+		})*/
+
+		$( "div.checkbox" ).change(function() {
+		  var $input = $( this );
+		  $(".list_wrapper").append(this).change();
 		});
+
 
 	</script>
 </html>
