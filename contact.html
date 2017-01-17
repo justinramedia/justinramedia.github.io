@@ -37,23 +37,23 @@
 						<p>User experience is sometimes about options. </p>
 					</header>
 					<div class="box">
-						<form method="post" action="https://formspree.io/justinramedia@gmail.com" name="contactform">
+						<form method="post" action="https://docs.google.com/forms/d/1t3mpzLmKHvXZgO4YnvDsNuRdnbWBo8edyFaANoCqRJk/formResponse" target="hidden_iframe" onsubmit="submitted=true;" >
 							<div class="row uniform 50%">
 								<div class="6u 12u(mobilep)">
-									<input type="text" name="name" id="name" value="" placeholder="Name" />
+									<input type="text" name="entry.1250828465" id="entry.1250828465" value="" placeholder="Name" />
 								</div>
 								<div class="6u 12u(mobilep)">
-									<input type="email" name="email" id="email" value="" placeholder="Email" />
+									<input type="email" name="entry.2058941401" id="entry.2058941401" value="" placeholder="Email" />
 								</div>
 							</div>
 							<div class="row uniform 50%">
 								<div class="12u">
-									<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+									<input type="text" name="entry.119375332" id="entry.119375332" value="" placeholder="Subject" />
 								</div>
 							</div>
 							<div class="row uniform 50%">
 								<div class="12u">
-									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+									<textarea name="entry.1315356551" id="entry.1315356551" placeholder="Enter your message" rows="6"></textarea>
 								</div>
 							</div>
 							<div class="row uniform">
@@ -64,6 +64,7 @@
 								</div>
 							</div>
 						</form>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 					</div>
 				</section>
 
@@ -92,6 +93,14 @@
           ga('send', 'pageview');
 
         </script>
+
+        <script type="text/javascript">var submitted=false;</script>
+		<script type="text/javascript">
+		$('#gform').on('submit', function(e) {
+		  $('#gform *').fadeOut(2000);
+		  $('#gform').prepend('Your submission has been processed...');
+		  });
+		</script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
