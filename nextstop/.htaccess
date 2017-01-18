@@ -1,0 +1,4 @@
+AuthType Basic  
+AuthName "restricted area"  
+AuthUserFile /justinramedia.github.io/nextstop/.htpasswd  
+require valid-user
