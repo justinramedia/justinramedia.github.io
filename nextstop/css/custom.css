@@ -1,3 +1,30 @@
 video {
 	width: 100%;
 }
+
+#contact .input-group {
+	margin: 0 auto 2rem;
+}
+
+#contact input {
+	-webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 10px 20px;
+}
+
+#contact input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+#contact input::-moz-placeholder { /* Firefox 19+ */
+  color: #fff;
+}
+#contact input:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+#contact input:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
