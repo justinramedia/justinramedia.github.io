@@ -1,8 +1,5 @@
-/*!
- * Start Bootstrap - New Age v3.3.7 (http://startbootstrap.com/template-overviews/new-age)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+/* New Age styles */
+
 .heading-font {
   font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
@@ -151,14 +148,15 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #7b4397;
+  background: url("../img/bg-pattern.png"), #24b2dc;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #3a00cf, #24b2dc);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #3a00cf, #24b2dc);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
 }
+
 header .header-content {
   text-align: center;
   padding: 150px 0 50px;
@@ -284,8 +282,8 @@ section.features .feature-item h3 {
 }
 section.features .feature-item i {
   font-size: 80px;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
+  background: -webkit-linear-gradient(to left, #3a00cf, #24b2dc);
+  background: linear-gradient(to left, #3a00cf, #24b2dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -313,7 +311,7 @@ section.cta .cta-content h2 {
   margin-top: 0;
   margin-bottom: 25px;
   color: white;
-  max-width: 450px;
+  max-width: 600px;
   font-size: 50px;
 }
 @media (min-width: 768px) {
@@ -393,12 +391,12 @@ footer ul li a.active {
   text-decoration: none;
 }
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539);
+  background: #dcff22;
+  background: -webkit-linear-gradient(#dcff22, #b4d401);
+  background: linear-gradient(#dcff22, #b4d401);
 }
 .text-primary {
-  color: #fdcc52;
+  color: #dcff22;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -414,8 +412,8 @@ footer ul li a.active {
 .btn-outline:active,
 .btn-outline.active {
   color: white;
-  background-color: #fdcc52;
-  border-color: #fdcc52;
+  background-color: #dcff22;
+  border-color: #dcff22;
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
