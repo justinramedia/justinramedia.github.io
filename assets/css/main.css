@@ -2749,4 +2749,14 @@ body.landing #main {
   #cta {
     padding: 2.5em 1em 3em 1em; } }
 
+/* Custom Styles */
+ul.tags {
+  margin: 0 0 1rem;
+  padding: 0;
+}
+ul.tags li {
+  display: inline-block;
+  padding: 0 .5rem 0 0;
+}
+
 /*# sourceMappingURL=main.css.map */
