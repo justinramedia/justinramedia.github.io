@@ -1564,8 +1564,8 @@ textarea {
   input[type="email"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #e89980;
-    box-shadow: 0 0 0 2px #e89980; }
+    border-color: #90b0ba;
+    box-shadow: 0 0 0 2px #90b0ba; }
 
 .select-wrapper {
   text-decoration: none;
@@ -1824,6 +1824,10 @@ input[type="radio"] + label:before {
     .image.fit img {
       display: block;
       width: 100%; }
+.img-responsive {
+  max-width: 100%;
+  width: 100%;
+}
 
 /* List */
 ol {
@@ -2757,6 +2761,20 @@ ul.tags {
 ul.tags li {
   display: inline-block;
   padding: 0 .5rem 0 0;
+}
+
+.box h3 a {
+  border-bottom: none;
+}
+
+.box h3 a:hover {
+  color: #7fcdb8;
+}
+
+.box h3 a .fa {
+  font-size: 14px;
+  top: -2px;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */
