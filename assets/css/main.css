@@ -2289,7 +2289,7 @@ body.landing #page-wrapper {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
     color: #fff;
-    min-width: 12em; }
+    font-size: 18px; }
     #banner input[type="submit"]:hover,
     #banner input[type="reset"]:hover,
     #banner input[type="button"]:hover,
@@ -2614,7 +2614,8 @@ body.landing #main {
     letter-spacing: -0.025em; }
 
   h3 {
-    font-size: 1.5em; }
+    font-size: .75em;
+    line-height: 1em; }
 
   h4 {
     font-size: 1em; }
@@ -2659,9 +2660,9 @@ body.landing #main {
   #banner {
      }
     #banner h2 {
-      font-size: 2.25em; }
+      font-size: .75em; }
     #banner p {
-      font-size: 1.25em; }
+      font-size: .5em; }
 
   /* Main */
   #main {
