@@ -1,0 +1,32 @@
+/* Scss Document */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5rem;
+} 
+
+.brands {
+	img {
+		max-height: 35px;
+		margin: 2rem;
+	}
+}
+
+#content {
+	figure, .medium-feed-item {
+		img {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+	.blog-post {
+		p, h4 {
+			display: none;
+		}
+		.blog-content {
+			h4 {
+				display: block;
+			}
+		}
+	}
+}
